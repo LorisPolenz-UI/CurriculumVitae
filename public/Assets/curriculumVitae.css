@@ -1,0 +1,57 @@
+.background {
+    background-color: #D1D1BA ;
+}
+
+.textAlignRight {
+    text-align: right;
+}
+
+.lineHeight {
+    line-height: 1%;
+}
+
+a {
+    color: black;
+    opacity: 0.8;
+}
+
+.marginTop48px {
+    margin-top: 48px;
+}
+
+.marginTop24px {
+    margin-top: 24px;
+}
+
+.marginTop56px {
+    margin-top: 56px;
+}
+
+.marginTop12px {
+    margin-top: 12px;
+}
+
+.marginBottom {
+    margin-bottom: 56px;
+}
+
+.opacity {
+    opacity: 0.8;
+}
+
+.opacity60 {
+    opacity: 0.7;
+}
+
+.img {
+    box-shadow: 2px 1px 8px black;
+    height: 100%;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.fontSizee {
+    font-size: 55px;
+}
