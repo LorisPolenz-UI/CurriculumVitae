@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://sdx.scsstatic.ch/v2.19.0/css/webcomponents.min.css">
+    <script type="module"
+        src="https://sdx.scsstatic.ch/v2.19.0/js/webcomponents/webcomponents/webcomponents.esm.js"></script>
+    <script nomodule="" src="https://sdx.scsstatic.ch/v2.19.0/js/webcomponents/webcomponents/webcomponents.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./assets/notLoadingAnimation.css">
+    <link rel="stylesheet" href="./assets/general.css">
+    <link rel="stylesheet" href="./assets/index.css">
+
+    <title>Curriculum Vitae</title>
+</head>
+
+
+<body>
+
+    <div id="msg" style="font-size:largest;">
+
+        <svg class="loader" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg">
+            <circle class="internal-circle" cx="60" cy="60" r="30"></circle>
+            <circle class="external-circle" cx="60" cy="60" r="50"></circle>
+        </svg>
+        <h1>
+            <div class="container">
+                <div class="loading">
+                    <div class="loading__letter">L</div>
+                    <div class="loading__letter">o</div>
+                    <div class="loading__letter">a</div>
+                    <div class="loading__letter">d</div>
+                    <div class="loading__letter">i</div>
+                    <div class="loading__letter">n</div>
+                    <div class="loading__letter">g</div>
+                    <div class="loading__letter">.</div>
+                    <div class="loading__letter">.</div>
+                    <div class="loading__letter">.</div>
+                </div>
+            </div>
+        </h1>
+
+
+    </div>
+
+
+
+    <div id="body" style="display:none;">
+
+        <header>
+            <h1>Curriculum Vitae</h1>
+        </header>
+
+        <main class="container-fluid">
+            <div class="row firstRow">
+                <div class="personalInformation col-lg-6">
+                    <h2>Loris Polenz</h2>
+                    <h4>Informatiker Applikaionsentwicklung <i>(1. Lehrjahr)</i></h4>
+                    <h4>22.02.2020</h4>
+                    <h4><a
+                            href="https://www.google.ch/maps/place/Ledergasse,+6375+Beckenried/@46.971505,8.4592715,17z/data=!3m1!4b1!4m5!3m4!1s0x4785582e4a1e6e79:0xe8bbeff6eb4bd90!8m2!3d46.971505!4d8.4614602">Lederhasse
+                            24, 6375 Beckenried</a></h4>
+                    <h4><a href="telto:+41799559250">+41 79 955 92 50</a></h4>
+                    <h4><a href="mailto: loris.polenz@swisscom.com">Loris.Polenz@swisscom.com</a></h4>
+                </div>
+
+                <div class="imageOfMe col-lg-6">
+                    <img src="./assets/img/P8030030.JPG" alt="Bild von Loris Polenz">
+                </div>
+            </div>
+
+
+            <div class="row hobbiesAndPersonalInterests">
+                <div class="hobbies col-lg-4">
+                    <h4>Game entwicklung</h4>
+                    <h4>Information Security</h4>
+                    <h4>Microcomputer</h4>
+                    <h4>Automation</h4>
+                </div>
+
+                <div class="personalInterests col-lg-4">
+                    <h4>Wasser trinken</h4>
+                    <h4>Schnecken Sammeln</h4>
+                    <h4>Coca Cola Einwürfel machen</h4>
+                    <h4>Essen kochen & essen</h4>
+                </div>
+            </div>
+
+
+            <!--Skills in Development-->
+            <!--TODO: Add Bars to show skill-->
+            <div class="ictSkillsRow">
+                <div class="ictSkillsRowOne row">
+
+                    <div class="skillJS col-lg-2">
+                        <h4>Java Script</h4>
+                        <div class="skillBarometerBox">
+                            <svg class="progress-ring">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                        <stop offset="0%" stop-color="#0EABA9" />
+                                        <stop offset="100%" stop-color="#E61E64" />
+                                    </linearGradient>
+                                </defs>
+                                <circle class="progress-ring__circle circleJS" stroke="#0EABA9" r="52" cx="60"
+                                    cy="60" />
+                                <text x="50%" y="50%" text-anchor="middle" id="skillJS"></text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="skillVB col-lg-2 ">
+                        <h4>Visual Basic</h4>
+                        <div class="skillBarometerBox">
+                            <svg class="progress-ring">
+                                <circle class="progress-ring__circle circleVB" stroke="#0EABA9" r="52" cx="60"
+                                    cy="60" />
+                                <text x="50%" y="50%" text-anchor="middle" id="skillVB"></text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="skillJava col-lg-2 ">
+                        <h4>Java</h4>
+                        <div class="skillBarometerBox">
+                            <svg class="progress-ring">
+                                <circle class="progress-ring__circle circleJava" stroke="#0EABA9" r="52" cx="60"
+                                    cy="60" />
+                                <text x="50%" y="50%" text-anchor="middle" id="skillJava"></text>
+                            </svg>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="ictSkillsRowTwo row">
+
+                    <div class="skillSQL col-lg-2 ">
+                        <h4>SQL</h4>
+                        <div class="skillBarometerBox">
+                            <svg class="progress-ring">
+                                <circle class="progress-ring__circle circleSQL" stroke="#0EABA9" r="52" cx="60"
+                                    cy="60" />
+                                <text x="50%" y="50%" text-anchor="middle" id="skillSQL"></text>
+                            </svg>
+                        </div>
+                    </div>
+
+                    <div class="skillVue col-lg-2 ">
+                        <h4>Vue</h4>
+                        <div class="skillBarometerBox">
+                            <svg class="progress-ring">
+                                <circle class="progress-ring__circle circleVue" stroke="#0EABA9" r="52" cx="60"
+                                    cy="60" />
+                                <text x="50%" y="50%" text-anchor="middle" id="skillVue"></text>
+                            </svg>
+                        </div>
+                    </div>
+
+
+                    <div class="skillAngular col-lg-2 ">
+                        <h4>Angular</h4>
+                        <div class="skillBarometerBox">
+                            <svg class="progress-ring">
+                                <circle class="progress-ring__circle circleAngular" stroke="#0EABA9" r="52" cx="60"
+                                    cy="60" />
+                                <text x="50%" y="50%" text-anchor="middle" id="skillAngular"></text>
+                            </svg>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                <script src="./scripts/statusBar.js"></script>
+            </div>
+
+
+            <!--Projects I've done--->
+            <div class="previousPorjects">
+                <div class="row firstRowProjects">
+
+
+                    <div class="projectBankingTestDatabase col-lg-2">
+                        <h4 class="font font--semi-bold  margin-bottom-1">
+                            Banking
+                            Testautomation Framework
+                        </h4>
+                        <p class="text-recommended-max-width margin-bottom-2">21.09.2020 &mdash; Heute</p>
+
+                        <sdx-expand-and-collapse expand-label="Show details" collapse-label="Hide details">
+                            <p> Bei der Testautomation habe ich mit weiteren Lernenden eine Testdatendatenbank erstellt.
+                                Dieses
+                                Framework wird das alte, kaum Dokumentierene, Framework erstetzen. </p>
+                        </sdx-expand-and-collapse> 
+                    </div>
+
+
+                    <div class="projectVolunteerHackZürich col-lg-2">
+                        <h4>
+                            <p class="font font--semi-bold text-recommended-max-width margin-bottom-1">Volunteer am
+                                HackZürich</p>
+                        </h4>
+                        <p class="text-recommended-max-width margin-bottom-2">19.09.2020</p>
+
+                        <sdx-expand-and-collapse expand-label="Show details" collapse-label="Hide details">
+                            <p> Am HackZürich habe ich als Volunteer geholfen, die Location auf Vordermann zu halten.
+                            </p>
+                        </sdx-expand-and-collapse>
+                    </div>
+
+                    <div class="projectFS2020 col-lg-2">
+                        <h4>
+                            <p class="font font--semi-bold text-recommended-max-width margin-bottom-1">First Steps 2020
+                            </p>
+                        </h4>
+                        <p class="text-recommended-max-width margin-bottom-2">03.08.2020 &mdash; 14.08.2020</p>
+
+                        <sdx-expand-and-collapse expand-label="Show details" collapse-label="Hide details">
+                            <p> Bei den First Steps haben andere Lerenende und ich die neuen Lernenden in die Welt von
+                                Swisscom
+                                eingeführt.</p>
+                        </sdx-expand-and-collapse>
+                    </div>
+
+                </div>
+
+
+
+
+
+
+
+                <div class="row secondRowProjects">
+
+                    <div class="projectBankingKnowlage col-lg-2">
+                        <h4>
+                            <p class="font font--semi-bold text-recommended-max-width margin-bottom-1">Fachwissen im
+                                Banking vermitteln</p>
+                        </h4>
+                        <p class="text-recommended-max-width margin-bottom-2">17.02.2020 &mdash; 16.09.2020</p>
+
+                        <sdx-expand-and-collapse expand-label="Show details" collapse-label="Hide details">
+                            <p class="text-b2 text-recommended-max-width" role="region">
+                                Ich habe auf moderne Art für neue Mitarbeiter Lerninhalte geschaffen. Das Ziel war, dass
+                                jeder
+                                neue Mitarbeiter ohne Problme in die Materie einsteigen kann.
+                            </p>
+                        </sdx-expand-and-collapse>
+                    </div>
+
+                    <div class="projectNEXCC col-lg-2">
+                        <h4>
+                            <p class="font font--semi-bold text-recommended-max-width margin-bottom-1">NEX-CC</p>
+                        </h4>
+                        <p class="text-recommended-max-width margin-bottom-2">12.08.2019 &mdash; 15.02.2020</p>
+
+                        <sdx-expand-and-collapse expand-label="Show details" collapse-label="Hide details">
+                            <p class="text-b2 text-recommended-max-width" role="region">
+                                Wir sind das Nex Competence Center, wir unterhalten die wichtigsten
+                                Applikationen und machen
+                                den
+                                Hard- und Software Support von Nex.
+                            </p>
+                        </sdx-expand-and-collapse>
+                    </div>
+
+
+                    <div class="projectFS2019 col-lg-2">
+                        <h4>
+                            <p class="font font--semi-bold text-recommended-max-width margin-bottom-1">First Steps
+                                2019</p>
+                        </h4>
+                        <p class="text-recommended-max-width margin-bottom-2">02.08.2019 &mdash; 09.08.2020</p>
+
+                        <sdx-expand-and-collapse expand-label="Show details" collapse-label="Hide details">
+                            <p class="text-b2 text-recommended-max-width" role="region">
+                                Bei den First Steps wurden wir in die Welt von Swisscom eingeführt.
+                            </p>
+                        </sdx-expand-and-collapse>
+                    </div>
+
+                </div>
+            </div>
+    </div>
+
+
+    </main>
+
+
+    <!--Footer-->
+    <footer class="container-fluid">
+        <div class="row rowDownLoadButton">
+            <sdx-button-group>
+                <sdx-button label="Download documents"></sdx-button>
+            </sdx-button-group>
+        </div>
+
+        <div class="references row">
+            <div class="refLB col-lg-4 ">
+                <h4>Lernbegleitung</h4>
+                <h5>Fabienne Arnet</h5>
+                <h5><a href="tel:+41795637961">+41 79 563 79 61</a></h5>
+                <h5><a href="mailto:Fabienne.Arnet@swisscom.com">Fabienne.Arnet@swisscom.com</a></h5>
+            </div>
+
+            <div class="refPA col-lg-4">
+                <h4>Aktueller Projektanbieter</h4>
+                <h5>Alessio Iantosca</h5>
+                <h5><a href="tel:+41794445966">+41 79 444 59 66</a></h5>
+                <h5><a href="mailto:Alessio.Iantosca@swisscom.com">Alessio.Iantosca@swisscom.com</a></h5>
+            </div>
+        </div>
+
+
+    </footer>
+    <sdx-scroll-to-top></sdx-scroll-to-top>
+    </div>
+
+
+    <script src="./scripts/showOnlyWhenLoaded.js"></script>
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#0EABA9available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-storage.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.0/axios.min.js"
+        integrity="sha512-DZqqY3PiOvTP9HkjIWgjO6ouCbq+dxqWoJZ/Q+zPYNHmlnI2dQnbJ5bxAHpAMw+LXRm4D72EIRXzvcHQtE8/VQ=="
+        crossorigin="anonymous"></script>
+
+
+
+    <script src="./scripts/getMotivationLetterID.js"></script>
+
+</body>
+
+</html>

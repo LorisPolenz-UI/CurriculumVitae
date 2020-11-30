@@ -1,0 +1,18 @@
+/*General code to set all to default*/
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Trebuchet MS';
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+/*Arrange Header, Main and footer right*/
+body {
+    display: block;
+    background-color: #EEF3F6;
+}
