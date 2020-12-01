@@ -6,13 +6,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://sdx.scsstatic.ch/v2.19.0/css/webcomponents.min.css">
-    <script type="module"
-        src="https://sdx.scsstatic.ch/v2.19.0/js/webcomponents/webcomponents/webcomponents.esm.js"></script>
+    <script type="module" src="https://sdx.scsstatic.ch/v2.19.0/js/webcomponents/webcomponents/webcomponents.esm.js"></script>
     <script nomodule="" src="https://sdx.scsstatic.ch/v2.19.0/js/webcomponents/webcomponents/webcomponents.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://sdx.scsstatic.ch/v2.20.0/css/sdx.min.css">
     <link rel="stylesheet" href="./assets/notLoadingAnimation.css">
     <link rel="stylesheet" href="./assets/general.css">
     <link rel="stylesheet" href="./assets/index.css">
@@ -52,7 +52,7 @@
 
 
     <div id="body" style="display:none;">
-
+        <sdx-scroll-to-top></sdx-scroll-to-top>
         <header>
             <h1>Curriculum Vitae</h1>
         </header>
@@ -63,8 +63,7 @@
                     <h2>Loris Polenz</h2>
                     <h4>Informatiker Applikaionsentwicklung <i>(1. Lehrjahr)</i></h4>
                     <h4>22.02.2020</h4>
-                    <h4><a
-                            href="https://www.google.ch/maps/place/Ledergasse,+6375+Beckenried/@46.971505,8.4592715,17z/data=!3m1!4b1!4m5!3m4!1s0x4785582e4a1e6e79:0xe8bbeff6eb4bd90!8m2!3d46.971505!4d8.4614602">Lederhasse
+                    <h4><a href="https://www.google.ch/maps/place/Ledergasse,+6375+Beckenried/@46.971505,8.4592715,17z/data=!3m1!4b1!4m5!3m4!1s0x4785582e4a1e6e79:0xe8bbeff6eb4bd90!8m2!3d46.971505!4d8.4614602">Lederhasse
                             24, 6375 Beckenried</a></h4>
                     <h4><a href="telto:+41799559250">+41 79 955 92 50</a></h4>
                     <h4><a href="mailto: loris.polenz@swisscom.com">Loris.Polenz@swisscom.com</a></h4>
@@ -76,19 +75,21 @@
             </div>
 
 
-            <div class="row hobbiesAndPersonalInterests">
+            <div class="row hobbiesAndprivateProjects">
                 <div class="hobbies col-lg-4">
-                    <h4>Game entwicklung</h4>
+                    <h3>Hobbies</h3>
+                    <h4>Innovation</h4>
+                    <h4>Unternehmerzum</h4>
                     <h4>Information Security</h4>
-                    <h4>Microcomputer</h4>
                     <h4>Automation</h4>
                 </div>
 
-                <div class="personalInterests col-lg-4">
-                    <h4>Wasser trinken</h4>
-                    <h4>Schnecken Sammeln</h4>
-                    <h4>Coca Cola Einwürfel machen</h4>
-                    <h4>Essen kochen & essen</h4>
+                <div class="privateProjects col-lg-4">
+                    <h3>Private Projekte</h3>
+                    <h4>Innovation-Box 2019</h4>
+                    <h4>Innovation-Box 2020</h4>
+                    <h4>Crazy Hospital Quartett</h4>
+                    <h4><a href="https://github.com/LorisPolenz-UI">Weitere Projekte...</a></h4>
                 </div>
             </div>
 
@@ -114,6 +115,7 @@
                             </svg>
                         </div>
                     </div>
+
 
                     <div class="skillVB col-lg-2 ">
                         <h4>Visual Basic</h4>
@@ -186,10 +188,11 @@
 
             <!--Projects I've done--->
             <div class="previousPorjects">
-                <div class="row firstRowProjects">
 
 
-                    <div class="projectBankingTestDatabase col-lg-2">
+
+                <div class="row">
+                    <div class="col-lg-5">
                         <h4 class="font font--semi-bold  margin-bottom-1">
                             Banking
                             Testautomation Framework
@@ -200,14 +203,15 @@
                             <p> Bei der Testautomation habe ich mit weiteren Lernenden eine Testdatendatenbank erstellt.
                                 Dieses
                                 Framework wird das alte, kaum Dokumentierene, Framework erstetzen. </p>
-                        </sdx-expand-and-collapse> 
+                        </sdx-expand-and-collapse>
                     </div>
+                </div>
 
-
-                    <div class="projectVolunteerHackZürich col-lg-2">
-                        <h4>
-                            <p class="font font--semi-bold text-recommended-max-width margin-bottom-1">Volunteer am
-                                HackZürich</p>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h4 class="font font--semi-bold  margin-bottom-1">
+                            Volunteer am
+                            HackZürich
                         </h4>
                         <p class="text-recommended-max-width margin-bottom-2">19.09.2020</p>
 
@@ -216,35 +220,29 @@
                             </p>
                         </sdx-expand-and-collapse>
                     </div>
+                </div>
 
-                    <div class="projectFS2020 col-lg-2">
-                        <h4>
-                            <p class="font font--semi-bold text-recommended-max-width margin-bottom-1">First Steps 2020
-                            </p>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h4 class="font font--semi-bold  margin-bottom-1">
+                            First Steps 2020
+
                         </h4>
                         <p class="text-recommended-max-width margin-bottom-2">03.08.2020 &mdash; 14.08.2020</p>
 
                         <sdx-expand-and-collapse expand-label="Show details" collapse-label="Hide details">
-                            <p> Bei den First Steps haben andere Lerenende und ich die neuen Lernenden in die Welt von
-                                Swisscom
-                                eingeführt.</p>
+                            Bei den First Steps haben andere Lerenende und ich die neuen Lernenden in die Welt von
+                            Swisscom
+                            eingeführt.
                         </sdx-expand-and-collapse>
                     </div>
-
                 </div>
 
-
-
-
-
-
-
-                <div class="row secondRowProjects">
-
-                    <div class="projectBankingKnowlage col-lg-2">
-                        <h4>
-                            <p class="font font--semi-bold text-recommended-max-width margin-bottom-1">Fachwissen im
-                                Banking vermitteln</p>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h4 class="font font--semi-bold  margin-bottom-1">
+                            Fachwissen im
+                            Banking vermitteln
                         </h4>
                         <p class="text-recommended-max-width margin-bottom-2">17.02.2020 &mdash; 16.09.2020</p>
 
@@ -256,10 +254,12 @@
                             </p>
                         </sdx-expand-and-collapse>
                     </div>
+                </div>
 
-                    <div class="projectNEXCC col-lg-2">
-                        <h4>
-                            <p class="font font--semi-bold text-recommended-max-width margin-bottom-1">NEX-CC</p>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h4 class="font font--semi-bold  margin-bottom-1">
+                            NEX-CC
                         </h4>
                         <p class="text-recommended-max-width margin-bottom-2">12.08.2019 &mdash; 15.02.2020</p>
 
@@ -272,12 +272,12 @@
                             </p>
                         </sdx-expand-and-collapse>
                     </div>
+                </div>
 
-
-                    <div class="projectFS2019 col-lg-2">
-                        <h4>
-                            <p class="font font--semi-bold text-recommended-max-width margin-bottom-1">First Steps
-                                2019</p>
+                <div class="row">
+                    <div class="col-lg-5">
+                        <h4 class="font font--semi-bold  margin-bottom-1">
+                            Frst Steps 2019
                         </h4>
                         <p class="text-recommended-max-width margin-bottom-2">02.08.2019 &mdash; 09.08.2020</p>
 
@@ -287,49 +287,48 @@
                             </p>
                         </sdx-expand-and-collapse>
                     </div>
-
                 </div>
             </div>
-    </div>
 
 
-    </main>
+
+        </main>
 
 
-    <!--Footer-->
-    <footer class="container-fluid">
-        <div class="row rowDownLoadButton">
-            <sdx-button-group>
-                <sdx-button label="Download documents"></sdx-button>
-            </sdx-button-group>
-        </div>
-
-        <div class="references row">
-            <div class="refLB col-lg-4 ">
-                <h4>Lernbegleitung</h4>
-                <h5>Fabienne Arnet</h5>
-                <h5><a href="tel:+41795637961">+41 79 563 79 61</a></h5>
-                <h5><a href="mailto:Fabienne.Arnet@swisscom.com">Fabienne.Arnet@swisscom.com</a></h5>
+        <!--Footer-->
+        <footer class="container-fluid">
+            <div class="row rowDownLoadButton">
+                <sdx-button-group>
+                    <sdx-button label="Download documents"></sdx-button>
+                </sdx-button-group>
             </div>
 
-            <div class="refPA col-lg-4">
-                <h4>Aktueller Projektanbieter</h4>
-                <h5>Alessio Iantosca</h5>
-                <h5><a href="tel:+41794445966">+41 79 444 59 66</a></h5>
-                <h5><a href="mailto:Alessio.Iantosca@swisscom.com">Alessio.Iantosca@swisscom.com</a></h5>
+            <div class="references row">
+                <div class="refLB col-lg-4 ">
+                    <h4>Lernbegleitung</h4>
+                    <h5>Fabienne Arnet</h5>
+                    <h5><a href="tel:+41795637961">+41 79 563 79 61</a></h5>
+                    <h5><a href="mailto:Fabienne.Arnet@swisscom.com">Fabienne.Arnet@swisscom.com</a></h5>
+                </div>
+
+                <div class="refPA col-lg-4">
+                    <h4>Aktueller Projektanbieter</h4>
+                    <h5>Alessio Iantosca</h5>
+                    <h5><a href="tel:+41794445966">+41 79 444 59 66</a></h5>
+                    <h5><a href="mailto:Alessio.Iantosca@swisscom.com">Alessio.Iantosca@swisscom.com</a></h5>
+                </div>
             </div>
-        </div>
 
 
-    </footer>
-    <sdx-scroll-to-top></sdx-scroll-to-top>
+        </footer>
+        
     </div>
-
+    </div>
 
     <script src="./scripts/showOnlyWhenLoaded.js"></script>
 
 
-
+    <script src="https://sdx.scsstatic.ch/v2.20.0/js/sdx.min.js"></script>
 
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
