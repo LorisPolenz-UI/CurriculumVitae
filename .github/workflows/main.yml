@@ -3,7 +3,6 @@ name: 🚀 Deploy website on push
 jobs:
   web-deploy:
     name: 🎉 Deploy
-    runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2.3.2
@@ -14,3 +13,5 @@ jobs:
         server: sl203.web.hostpoint.ch
         username: devFiles@lorispolenz.com
         password: ${{ secrets.ftp_password }}
+        protocoll: ftp
+        port: 21
