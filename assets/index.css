@@ -4,6 +4,10 @@
     height: 20rem;
 }
 
+a, a:hover, a:visited {
+    color: #11AAFF;
+    border-bottom: none;
+}
 
 
 
