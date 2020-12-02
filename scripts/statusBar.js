@@ -1,6 +1,6 @@
 
 
-var skillsNr = [40, 20, 40, 30, 10, 10];
+var skillsNr = [40, 15, 40, 30, 10, 10];
 var skillsName = ["JS", "VB", "Java", "SQL", "Vue", "Angular"];
 
 
